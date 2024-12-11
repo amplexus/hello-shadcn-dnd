@@ -14,7 +14,7 @@ function getMockItems() {
   return createRange(50, (index) => ({ id: index + 1 }));
 }
 
-export function DndDemo() {
+export function MenuEditorPanel() {
   const [items, setItems] = useState(getMockItems);
   return (
     <div className="max-w-[400px] my-30 mx-auto">

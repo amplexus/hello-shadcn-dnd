@@ -28,8 +28,16 @@ const MAIN_MENU = [
     href: "/pricing",
   },
   {
-    name: "DnD",
-    href: "/dnd",
+    name: "Menu Edit",
+    href: "/dnd-menu",
+  },
+  {
+    name: "Item Selector",
+    href: "/dnd-selector",
+  },
+  {
+    name: "Grid Order",
+    href: "/dnd-grid",
   },
 ]
 
