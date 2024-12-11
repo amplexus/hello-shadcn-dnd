@@ -14,10 +14,8 @@ import {
   sortableKeyboardCoordinates
 } from "@dnd-kit/sortable";
 
-import "./sortable-list.css";
-
 import { SortableOverlay } from "./sortable-overlay";
-import { DragHandle, SortableItem } from "./sortable-item";
+import { DragHandle } from "./sortable-item";
 
 interface BaseItem {
   id: UniqueIdentifier;
@@ -66,7 +64,7 @@ export function SortableList<T extends BaseItem>({
       }}
     >
       <SortableContext items={items}>
-        <ul className="SortableList" role="application">
+        <ul className="flex flex-col gap-10 p-0 list-none" role="application">
           {items.map((item) => (
             <React.Fragment key={item.id}>{renderItem(item)}</React.Fragment>
           ))}
@@ -78,7 +76,3 @@ export function SortableList<T extends BaseItem>({
     </DndContext>
   );
 }
-
-SortableList.Item = SortableItem;
-SortableList.DragHandle = DragHandle;
-
