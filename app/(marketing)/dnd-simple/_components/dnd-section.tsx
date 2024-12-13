@@ -1,5 +1,6 @@
 "use client"
 import { useState } from 'react';
+import type { UniqueIdentifier } from '@dnd-kit/core';
 import { SortableList } from './sortable-list';
 import { DragHandle, SortableItem } from './sortable-item';
 
@@ -14,7 +15,7 @@ function getMockItems() {
   return createRange(50, (index) => ({ id: index + 1 }));
 }
 
-export function MenuEditorPanel() {
+export function DndDemoPanel() {
   const [items, setItems] = useState(getMockItems);
   return (
     <div className="max-w-[400px] my-30 mx-auto">

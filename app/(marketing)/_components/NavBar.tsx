@@ -28,6 +28,10 @@ const MAIN_MENU = [
     href: "/pricing",
   },
   {
+    name: "DnD Demo",
+    href: "/dnd-simple",
+  },
+  {
     name: "Menu Edit",
     href: "/dnd-menu",
   },
