@@ -1,7 +1,4 @@
 .Action {
-  root {
-    --focused-outline-color: #4c9ffe;
-  }
   display: flex;
   width: 12px;
   padding: 15px;
@@ -21,13 +18,13 @@
     &:hover {
       background-color: var(--action-background, rgba(0, 0, 0, 0.05));
 
-      svg {
+      & > svg {
         fill: #6f7b88;
       }
     }
   }
 
-  svg {
+  & > svg {
     flex: 0 0 auto;
     margin: auto;
     height: 100%;
@@ -38,7 +35,7 @@
   &:active {
     background-color: var(--background, rgba(0, 0, 0, 0.05));
 
-    svg {
+    & > svg {
       fill: var(--fill, #788491);
     }
   }

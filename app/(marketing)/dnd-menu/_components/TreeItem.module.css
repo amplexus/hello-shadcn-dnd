@@ -47,7 +47,7 @@
           background-color: #ffffff;
         }
 
-        > * {
+        & > * {
           /* Items are hidden using height and opacity to retain focus */
           opacity: 0;
           height: 0;
@@ -117,7 +117,7 @@
 }
 
 .Collapse {
-  svg {
+  & > svg {
     transition: transform 250ms ease;
   }
 

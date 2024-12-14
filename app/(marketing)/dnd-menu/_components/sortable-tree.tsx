@@ -124,7 +124,7 @@ export function SortableTree({
     const flattenedTree = flattenTree(items);
     const collapsedItems = flattenedTree.reduce<string[]>(
       (acc, { children, collapsed, id }) =>
-        collapsed && children.length ? [...acc, id] : acc,
+        collapsed && children.length ? [...acc, id as string] : acc,
       []
     );
 
@@ -207,7 +207,7 @@ export function SortableTree({
           <SortableTreeItem
             key={id}
             id={id}
-            value={id}
+            value={id as string}
             depth={id === activeId && projected ? projected.depth : depth}
             indentationWidth={indentationWidth}
             indicator={indicator}
